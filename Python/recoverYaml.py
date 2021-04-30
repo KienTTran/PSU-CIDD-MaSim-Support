@@ -1,6 +1,11 @@
 #!/usr/bin/python3
 
-# This script kind of recovers the original YAML file when the \n\r was stripped out of it
+# recoveryYaml.py
+#
+# This script intended to recover as much of the original YAML file that is 
+# stored in the database following the removal of the \n\r. Functionally the 
+# script is sufficient to be able to read the resulting YAML, but it is not 
+# compliant enough to actually be run.
 
 def get_last_delimiter(text, offset):
     while offset != -1:
